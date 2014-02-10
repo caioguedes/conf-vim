@@ -36,3 +36,6 @@ set guifont=Droid\ Sans\ Mono\ 11
 set encoding=utf-8
 set laststatus=2
 set t_Co=256
+
+" NerdTree Plugin
+map <Leader>e :NERDTreeToggle<CR>
