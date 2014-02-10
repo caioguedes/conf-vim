@@ -1,3 +1,8 @@
+" Setup Pathogen
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
+
 " Visual GVim
 set go-=T
 set go-=b
@@ -9,8 +14,6 @@ set go-=L
 
 " Setup
 set autoread
-syn on
-filetype plugin indent on
 set smartcase
 set ignorecase
 set nu
