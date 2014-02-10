@@ -1,0 +1,9 @@
+Personal Config For Vim/GVim
+
+Install
+
+	git clone git@github.com:CaioCesarDev/conf-vim.git
+
+Create symlinks:
+
+	ln -s ~/.vim/vimrc ~/.vimrc
