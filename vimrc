@@ -19,8 +19,11 @@ set ignorecase
 set nu
 set ruler
 
-" Color Theme
+" Color Theme & Status
 colorscheme molokai
+set encoding=utf-8
+set laststatus=2
+set t_Co=256
 
 " Tab Space
 set ts=4
@@ -29,7 +32,7 @@ set sw=4
 set noexpandtab
 
 " Font
-set guifont=Droid\ Sans\ Mono\ 11
+set guifont=Meslo\ LG\ S\ for\ Powerline\ 11
 
 " Moving Between Windows
 nnoremap <Leader>h <C-w>h
@@ -51,12 +54,6 @@ map <Leader>p :! php -l %<CR>
 " Run PHP lint checker on current file
 map <Leader>P :! php -q %<CR>
 
-" Powerline Plugin
-" let g:Powerline_symbols='fancy'
-set encoding=utf-8
-set laststatus=2
-set t_Co=256
-
 " NerdTree Plugin
 map <Leader>n :NERDTreeToggle<CR>
 
@@ -74,3 +71,14 @@ nnoremap <silent> <Leader>ge :Gedit<CR>
 " TagBar Plugin
 let g:tagbar_width=26
 noremap <silent> <Leader>y :TagbarToggle<CR>
+
+" Airline Plugin
+let g:airline_powerline_fonts = 1
+let g:airline_theme = 'powerlineish'
+
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_error_symbol = '✗✗'
+let g:syntastic_style_error_symbol = '✠✠'
+let g:syntastic_warning_symbol = '∆∆'
+let g:syntastic_style_warning_symbol = '≈≈'
