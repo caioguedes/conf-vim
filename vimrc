@@ -22,8 +22,10 @@ set ruler
 " Color Theme & Status
 colorscheme molokai
 set encoding=utf-8
+" set encoding=ISO-8599-1
 set laststatus=2
 set t_Co=256
+set backspace=2
 
 " Tab Space
 set ts=4
@@ -77,8 +79,8 @@ let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 
 " Syntastic
-let g:syntastic_check_on_open = 1
-let g:syntastic_error_symbol = '✗✗'
-let g:syntastic_style_error_symbol = '✠✠'
-let g:syntastic_warning_symbol = '∆∆'
-let g:syntastic_style_warning_symbol = '≈≈'
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_error_symbol = '✗✗'
+" let g:syntastic_style_error_symbol = '✠✠'
+" let g:syntastic_warning_symbol = '∆∆'
+" let g:syntastic_style_warning_symbol = '≈≈'
