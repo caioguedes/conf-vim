@@ -5,7 +5,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+" Plugins
 Plugin 'VundleVim/Vundle.vim'
+
+" Color Schemes
+Plugin 'w0ng/vim-hybrid'
+Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
@@ -27,7 +32,8 @@ set nu
 set ruler
 
 " Color Theme & Status
-colorscheme molokai
+colorscheme hybrid
+set background =dark
 set encoding=utf-8
 " set encoding=ISO-8599-1
 set laststatus=2
