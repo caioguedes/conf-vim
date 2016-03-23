@@ -30,17 +30,12 @@ if has('gui_running')
   set go-=L			" Hide Left Scroll
 end
 
-set autoread			" Auto reload file
-
 " Color Scheme
 colorscheme hybrid		" Choose your color scheme
 set background=dark
 set t_Co=256			" Terminal Colors
 
 " Plugins Settings
-
-" Plugin: Airline
-set laststatus=2		" Show Airline Status Bar
 
 " Plugin: Sensible
 set hlsearch			" Highlight Seach Ocurrences
