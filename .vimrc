@@ -11,6 +11,7 @@ Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'editorconfig/editorconfig-vim'
 
 " Color Schemes
 Plugin 'vim-airline/vim-airline-themes'
