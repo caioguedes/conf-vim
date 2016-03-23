@@ -12,11 +12,13 @@ Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'jiangmiao/auto-pairs'
 
 " Color Schemes
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'tomasr/molokai'
+Plugin 'joshdick/onedark.vim.git'
 
 call vundle#end()
 filetype plugin indent on
