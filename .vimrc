@@ -7,93 +7,35 @@ call vundle#begin()
 
 " Plugins
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
 
 " Color Schemes
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'w0ng/vim-hybrid'
 Plugin 'tomasr/molokai'
 
 call vundle#end()
 filetype plugin indent on
 
-" Visual GVim
-set go-=T
-set go-=b
-set go-=B
-set go-=r
-set go-=R
-set go-=l
-set go-=L
+" Gui Settings
+if has('gui_running')
+    set go-=T			" Hide Toobar
+    set go-=b			" Hide Bottom Scroll
+    set go-=B			" Hide Bottom Scroll
+    set go-=r			" Hide Right Scroll
+    set go-=R			" Hide Right Scroll
+    set go-=l			" Hide Left Scroll
+    set go-=L			" Hide Left Scroll
+end
 
-" Setup
-set autoread
-set smartcase
-set ignorecase
-set nu
-set ruler
+set autoread			" Auto reload file
 
-" Color Theme & Status
-colorscheme hybrid
-set background =dark
-set encoding=utf-8
-" set encoding=ISO-8599-1
-set laststatus=2
-set t_Co=256
-set backspace=2
+" Color Scheme
+colorscheme hybrid		" Choose your color scheme
+set background=dark
+set t_Co=256			" Terminal Colors
 
-" Tab Space
-set ts=4
-set sts=4
-set sw=4
-set noexpandtab
+" Plugins Settings
 
-" Font
-set guifont=Meslo\ LG\ S\ for\ Powerline\ 11
-
-" Moving Between Windows
-nnoremap <Leader>h <C-w>h
-nnoremap <Leader>l <C-w>l
-nnoremap <Leader>j <C-w>j
-nnoremap <Leader>k <C-w>k
-nnoremap <Leader>wo <C-w>o
-nnoremap <Leader>wv <C-w>v<C-w>l
-nnoremap <Leader>ws <C-w>s
-nnoremap <Leader>ww <C-w><C-w>
-
-" Copy & Paste
-map <Leader>v "+gP
-map <Leader>c "+y
-
-" Run PHP lint checker on current file
-map <Leader>p :! php -l %<CR>
-
-" Run PHP lint checker on current file
-map <Leader>P :! php -q %<CR>
-
-" NerdTree Plugin
-map <Leader>n :NERDTreeToggle<CR>
-
-" Fugitive Plugin
-nnoremap <silent> <Leader>gs :Gstatus<CR>
-nnoremap <silent> <Leader>gd :Gdiff<CR>
-nnoremap <silent> <Leader>gc :Gcommit<CR>
-nnoremap <silent> <Leader>gb :Gblame<CR>
-nnoremap <silent> <Leader>gl :Git log<CR>
-nnoremap <silent> <Leader>gp :Git push<CR>
-nnoremap <silent> <Leader>gr :Gread<CR>
-nnoremap <silent> <Leader>gw :Gwrite<CR>
-nnoremap <silent> <Leader>ge :Gedit<CR>
-
-" TagBar Plugin
-let g:tagbar_width=26
-noremap <silent> <Leader>y :TagbarToggle<CR>
-
-" Airline Plugin
-let g:airline_powerline_fonts = 1
-let g:airline_theme = 'powerlineish'
-
-" Syntastic
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_error_symbol = '✗✗'
-" let g:syntastic_style_error_symbol = '✠✠'
-" let g:syntastic_warning_symbol = '∆∆'
-" let g:syntastic_style_warning_symbol = '≈≈'
+" Plugin: Airline
+set laststatus=2		" Show Airline Status Bar
