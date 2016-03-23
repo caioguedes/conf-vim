@@ -10,6 +10,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-surround'
+Plugin 'easymotion/vim-easymotion'
 
 " Color Schemes
 Plugin 'vim-airline/vim-airline-themes'
@@ -34,6 +35,10 @@ end
 colorscheme hybrid		" Choose your color scheme
 set background=dark
 set t_Co=256			" Terminal Colors
+
+" Custom Settings
+set number
+set colorcolumn=120
 
 " Plugins Settings
 
