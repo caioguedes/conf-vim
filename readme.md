@@ -12,7 +12,5 @@ ln -s ~/.vim/vimrc ~/.vimrc
 
 ### Install Plugins
 ```bash
-cd ~/.vim
-git submodule init
-git submodule update
+vim +PluginInstall +qall
 ```
