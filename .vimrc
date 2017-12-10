@@ -13,6 +13,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'derekwyatt/vim-scala'
 
 " Color Schemes
 Plugin 'vim-airline/vim-airline-themes'
