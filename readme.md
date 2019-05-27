@@ -7,7 +7,7 @@ git clone git@github.com:CaioCesarDev/conf-vim.git ~/.vim
 
 ### Create symlinks:
 ```bash
-ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/.vimrc ~/.vimrc
 ```
 
 ### Install Plugins
